@@ -4,9 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { logo, heroImg } from '../assets'
 import styles from '../styles'
 
-function pageHOC() {
+const pageHOC = (Component, title, descritpion) => () => {
+  const navigat = useNavigate();
   return (
-    <div>pageHOC</div>
+    <div className={styles.hocContainer}>
+      <div className={styles.hocContentBox}>
+
+      </div>
+    </div>
   )
 }
 
