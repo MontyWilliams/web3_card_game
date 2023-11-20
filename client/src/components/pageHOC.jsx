@@ -10,6 +10,9 @@ const pageHOC = (Component, title, descritpion) => () => {
     <div className={styles.hocContainer}>
       <div className={styles.hocContentBox}>
         <img src={logo} alt="logo" className={styles.hocLogo} onClick={() => navigate('/')}/>
+        <div className={styles.hocBodyWrapper}>
+          <Component />
+        </div>
       </div>
     </div>
   )
