@@ -13,4 +13,6 @@ const Home = () => {
 
 export default pageHOC(
   Home,
+    <>Welcome to the crypto card game <br /> yeah yea <br /></>,
+    <>Connect  Wallet to do stuff <br /> Ther is no limit with crypto!</>
 )
