@@ -16,11 +16,20 @@ const pageHOC = (Component, title, descritpion) => () => {
               {title}
             </h1>
           </div>
-          <p className={`${styles.normalText} my-10`}>{descritpion}</p>
+          <p className={`${styles.normalText} my-10`}>
+            {descritpion}
+          </p>
           <Component />
-
         </div>
+        <p className={styles.footerText}>Inspired By JSM</p>
       </div>
+      <div className='flex flex-1'>
+          <img src={heroImg}
+            alt="hero-img"
+            className='w-full xl:h-full object-cover' />
+        </div>
+    
+
     </div>
   )
 }
